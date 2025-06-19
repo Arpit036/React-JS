@@ -1,5 +1,8 @@
+// ✅ 1. Imports 
 
 import React, {useId} from 'react'
+
+//  2. Function Signature & Props 
 
 function InputBox({
     label,
@@ -52,3 +55,5 @@ function InputBox({
 }
 
 export default InputBox;
+
+// complete explained : https://chatgpt.com/s/t_68539ff1f4908191bf7eac569b3a5207 

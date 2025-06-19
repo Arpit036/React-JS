@@ -1,7 +1,11 @@
+// 🔽 1. Import Statements. 
+
 import { useState } from 'react'
 import {InputBox} from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
+
+// 🔽 2. States Defined 
 
 function App() {
 
@@ -10,9 +14,13 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
+// 🔽 3. Fetch Currency Data
+
   const currencyInfo = useCurrencyInfo(from)
 
   const options = Object.keys(currencyInfo)
+
+  // 4. Swap Function
 
   const swap = () => {
     setFrom(to)
@@ -21,9 +29,14 @@ function App() {
     setAmount(convertedAmount)
   }
   
+
+  // 🔢 5. Convert Function 
+
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   }
+
+  // 🧱 6. UI Structure 
 
   return (
     <div
@@ -81,3 +94,7 @@ function App() {
 }
 
 export default App
+
+
+
+// complete explain : https://chatgpt.com/s/t_6853a047ab448191b7d3cf6266138c02 
