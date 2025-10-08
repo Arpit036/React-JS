@@ -6,7 +6,7 @@ function Counter (){
     
     
     const increament = () => setCount(Like+1)
-    const decrement =  () =>{if(Like > 0){ setCount(Like - 1)
+    const decrement =  () =>{if(Like > 0){ setCount(Like - 1);
     }}
 
 
